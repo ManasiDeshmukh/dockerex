@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Calculator from "./mycomponent/Calculator";
+import MyCheckBox from "./mycomponent/Checkboxex";
+import Dropdownli from "./mycomponent/Dropdown";
+import Quiz from "./mycomponent/Quiz"
+import Itemlist from "./mycomponent/Itemlist";
+import Login from "./mycomponent/login";
+function Mymsg(props)
+{
+    return <div>Itemname:{props.itemName}</div>
+}
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Calculator username="peter"/>
+{/* <Mymsg itemName="teaaa"/>
+
+<Login/>
+<Itemlist/> */}
+{/* <MyCheckBox/>
+<Dropdownli/> <Quiz/>*/}
+
+   </div>
   );
 }
 
